@@ -24,3 +24,7 @@ vim.opt.imsearch = 0 --Чтобы при старте поиск был на а�
 --highlight lCursor guifg=NONE guibg=red 
 --highlight Cursor guifg=NONE guibg=green
 
+--more natural split open
+vim.opt.splitbelow = true
+vim.opt.splitright = true
+

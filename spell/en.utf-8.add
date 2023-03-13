@@ -2,3 +2,9 @@ keymapping
 russian
 netrw
 keymap
+ctrl
+roma
+lua
+treesitter
+lsp
+easymotion

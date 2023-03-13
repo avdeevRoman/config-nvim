@@ -3,7 +3,6 @@ vim.cmd [[packadd packer.nvim]]
 return require('packer').startup(function(use)
   -- Packer can manage itself
   use { 'wbthomason/packer.nvim' }
-  use { 'easymotion/vim-easymotion' }
   use { 'nvim-treesitter/nvim-treesitter', { run = ':TSUpdate'} }
   use {
     'doums/darcula',
@@ -17,7 +16,6 @@ return require('packer').startup(function(use)
     requires = { {'nvim-lua/plenary.nvim'} }
   }
   use { 'ThePrimeagen/harpoon' }
-  use { 'mbbill/undotree' }
   use { 'tpope/vim-fugitive' }
 
   use {
@@ -41,5 +39,13 @@ return require('packer').startup(function(use)
       {'L3MON4D3/LuaSnip'},             -- Required
       {'rafamadriz/friendly-snippets'}, -- Optional
     }
+  }
+  use {
+    'phaazon/hop.nvim',
+    branch = 'v2', -- optional but strongly recommended
+    config = function()
+      -- you can configure Hop the way you like here; see :h hop-config
+      require'hop'.setup { keys = 'etovxqpdygfblzhckisuran' }
+    end
   }
 end)

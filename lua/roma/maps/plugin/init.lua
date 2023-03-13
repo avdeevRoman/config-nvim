@@ -1,0 +1,6 @@
+require("roma.maps.plugin.fugitive")
+require("roma.maps.plugin.harpoon")
+require("roma.maps.plugin.lsp")
+require("roma.maps.plugin.telescope")
+require("roma.maps.plugin.treesitter")
+require("roma.maps.plugin.hop")
